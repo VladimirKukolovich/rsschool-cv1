@@ -91,7 +91,8 @@ a{padding: 15px;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    width: 95%;
+    width: 100%;
+    margin: 0;
   }
   header{
     display: flex;
@@ -99,11 +100,17 @@ a{padding: 15px;
     width: 100%;
     justify-content: center;
     height: 60px;
+    background-color: rgba(156, 175, 192, 0.655);
   }
   @media(max-width: 480px) {
     header{
       height: 80px;
     }
+  }
+    @media(max-width: 290px) {
+      header{
+        height: 120px;
+      }
  }
   .header_content{
     padding: 0;
@@ -113,14 +120,22 @@ a{padding: 15px;
   align-items: center;
   justify-content: space-evenly;
   color: rgb(41, 41, 165);
-  /* width: 80%; */
+
 }
 .header_content li{
   list-style-type: none;
-  color: red;
+  color: rgb(0, 30, 255);
   margin: 0 10px;
 }
-span{color: black;
+span{
+  color: black;
+  font-size: .8rem;
+}
+.container{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 img{
 width: 15%;
@@ -130,8 +145,47 @@ min-width: 167px;
  h1{
   font-style: italic;
   font-family: cursive;
-  margin: 10px;
+  /* margin: 10px; */
   }
+  .title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: content;
+    padding: 10px 0;
+    background-color: antiquewhite;
+     }
+     .title_content{
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+    }
+    nav{
+      height: fit-content;
+      width:  fit-content;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+      font-style: normal;
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: rgba(219, 224, 228, 0.519);
+      border:solid rgba(86, 104, 192, 0.469) 2px;
+      border-radius: 5px;
+    }
+    nav a{
+      color:rgb(109, 7, 7) ;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 5px 10px;
+  font-size: .8rem;
+  font-weight: 600;
+}
+nav a:hover{
+ color:rgb(37, 85, 244);
+}
 /* nav{
   align-content: center;
   font-style: normal;
@@ -142,7 +196,7 @@ min-width: 167px;
   border-radius: 5px;
     }
    
-main{
+.title{
   display: flex;
   position: fixed;
   flex-direction: row;
