@@ -184,8 +184,9 @@ min-width: 167px;
   font-weight: 600;
 }
 nav a:hover{
- color:rgb(37, 85, 244);
+ color:rgba(37, 85, 244, 0.842);
 }
+
 /* nav{
   align-content: center;
   font-style: normal;
